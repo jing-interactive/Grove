@@ -132,18 +132,6 @@ namespace {
 		
 		// prepare preprocessor
 		gl_temp::ShaderPreprocessor pp;
-
-#if defined( CINDER_GL_ES )
-        pp.addDefine("CINDER_DESKTOP", "0");
-        pp.addDefine("CINDER_GL_ES_3", "1");
-        pp.addDefine("CINDER_GL_PLATFORM", "CINDER_GL_ES_3");
-        pp.setVersion(300);
-#else
-        pp.addDefine("CINDER_DESKTOP", "1");
-        //pp.addDefine("CINDER_GL_ES_3", "1");
-        //pp.addDefine("CINDER_GL_PLATFORM", "CINDER_GL_ES_3");
-        pp.setVersion(330);
-#endif
 		
 		// try to compile the shader
 		gl::GlslProgRef shader;

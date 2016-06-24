@@ -151,10 +151,6 @@ void Grove::setupRendering()
 	// load the postprocessing shader
 	try {
 		gl_temp::ShaderPreprocessor pp;
-		pp.addDefine( "CINDER_DESKTOP", "0" );
-		pp.addDefine( "CINDER_GL_ES_3",	"1" );
-		pp.addDefine( "CINDER_GL_PLATFORM", "CINDER_GL_ES_3" );
-		pp.setVersion( 300 );
 		mPostProcessing = gl::GlslProg::create( gl::GlslProg::Format().vertex( pp.parse( getAssetPath( "Shaders/Passtrough.vert" ) ).c_str() ).fragment( pp.parse( getAssetPath( "Shaders/PostProcessing.frag" ) ).c_str() ) );
 	}
 	catch( gl::GlslProgExc exc ){

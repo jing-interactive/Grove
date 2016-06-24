@@ -49,9 +49,13 @@ ShaderPreprocessor::ShaderPreprocessor()
 	// set the default version
 #if defined( CINDER_GL_ES_3 )
 	mVersion = 300;
+    addDefine("CINDER_DESKTOP", "0");
+    addDefine("CINDER_GL_ES_3", "1");
+    addDefine("CINDER_GL_PLATFORM", "CINDER_GL_ES_3");
 #elif defined( CINDER_GL_ES_2 )
 	mVersion = 100;
 #else // desktop
+    addDefine("CINDER_DESKTOP", "1");
 	mVersion = 150;
 #endif
 }
