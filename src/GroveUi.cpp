@@ -26,7 +26,7 @@
 #include "cinder/Timeline.h"
 #include "cinder/Log.h"
 
-#if defined( CINDER_ANDROID )
+#if defined( CINDER_ANDROID ) || defined( CINDER_COCOA_TOUCH )
 #include "cinder/MotionManager.h"
 #endif
 

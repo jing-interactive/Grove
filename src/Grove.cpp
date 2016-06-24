@@ -30,11 +30,13 @@
 #include "cinder/Timeline.h"
 #include "cinder/Log.h"
 #include "cinder/ip/Flip.h"
-//#include "cinder/android/CinderAndroid.h"
 #include "cinder/ObjLoader.h"
-//#include "cinder/MotionManager.h"
-
 #include "ShaderPreprocessor.h"
+
+#if defined( CINDER_ANDROID ) || defined( CINDER_COCOA_TOUCH )
+//#include "cinder/android/CinderAndroid.h"
+#include "cinder/MotionManager.h"
+#endif
 
 #include "glm/gtx/vector_angle.hpp"
 
