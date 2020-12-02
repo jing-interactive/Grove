@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		85450B2BE1EA4F368B74F483 /* TuioHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA112D124CC4D7D9F622274 /* TuioHelper.h */; };
+		698FC123D47A41CF805D0FCE /* TextureHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B467C7B7633A4E52A5CD3F29 /* TextureHelper.h */; };
+		D0E73877756646B6A9E73AD1 /* StateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F88076622F4F759726FE1D /* StateMachine.h */; };
+		BB3CD0C21D1040359A444D6D /* SharedMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B823334D25A44299FF278EC /* SharedMemory.h */; };
+		7296BB8571CC44889201DFFD /* renderdoc_app.h in Headers */ = {isa = PBXBuildFile; fileRef = F05F6A79AE83432EB8E09DDD /* renderdoc_app.h */; };
+		6D0344A96C754E3F92DDBB97 /* OscHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF346944C0FF4E44BB8E9BB0 /* OscHelper.h */; };
+		B8F9FD88171F422E9830105F /* NvOptimusEnablement.h in Headers */ = {isa = PBXBuildFile; fileRef = 3971423A5D4341CBB160E43D /* NvOptimusEnablement.h */; };
+		128CEE5C45CC42CFA6362E02 /* MotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 804DAB0E335040509E15405C /* MotionHelper.h */; };
+		06197802D3B9474F885A1689 /* MiniConfigImgui.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0B33DBD14D4960B7603401 /* MiniConfigImgui.h */; };
+		2989F607476F41239AB14B94 /* MiniConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F8881B0C7A4DE2AC3BA882 /* MiniConfig.h */; };
+		95790010261344CAB9F704CF /* LimitSingleInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D61844930A45A0BCC0465F /* LimitSingleInstance.h */; };
+		A0FE3C7C908745149B79C62E /* GlslParamsBuilderImgui.h in Headers */ = {isa = PBXBuildFile; fileRef = 933F7D9473654C04BD9E91B8 /* GlslParamsBuilderImgui.h */; };
+		D087D734804940B68069EBCD /* GlslParamsBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FD478269D64B3BA3E132C2 /* GlslParamsBuilder.h */; };
+		465EEA84BE114BDB9CA66664 /* GLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA7D8BBC46945B494D270FF /* GLHelper.h */; };
+		356E82545D374944ADFB2CBA /* FontHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 240365B92C194CAE9B52B0AD /* FontHelper.h */; };
+		58F0042C53FE485096FB2C7B /* DearLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E65F2FCB85EC4E7B9E1B0812 /* DearLogger.h */; };
+		164AE3E99F50426EB2DB2C6A /* CubemapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F12AA41F8542D4985AC1FD /* CubemapRenderer.h */; };
+		E7D43A2960354C96944B2509 /* CinderRemoteImgui.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E06912A1470462885C3CAFB /* CinderRemoteImgui.h */; };
+		3D47E0964334449D9CB19FEC /* CinderGuizmo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F312F008E2E49218BC60C5F /* CinderGuizmo.h */; };
+		475D9E227AE04B1A86FF972E /* CaptureHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F77CC98A26245328FAB7CEE /* CaptureHelper.h */; };
+		6DE9D8B05DAC4A10AB413187 /* AssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA20740FFF44DBA95ABA82F /* AssetManager.h */; };
+		B1D7B90710644893BB75B18E /* AnsiToUtf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E3AF16B1C8B4F31A0358C1D /* AnsiToUtf.h */; };
+		CA3686C823964F1F98A453F1 /* MiniConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61D022E3D2B84286960383E7 /* MiniConfig.cpp */; };
+		F98B4746A95D4E4B904B5955 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B176697FF3D5487AAB9C7C99 /* AssetManager.cpp */; };
+		72E1670E7C554237BF519512 /* GloveApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15C89B3BBDD543B498B53B10 /* GloveApp.cpp */; };
+		98E71D1B9B5945E789872815 /* item.def in Headers */ = {isa = PBXBuildFile; fileRef = AFCE225F036440E1BA97215A /* item.def */; };
+		E3BD1AB9EBE3403D80795102 /* Glove_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 77119124044149ADAFEC8B1A /* Glove_Prefix.pch */; };
+		C6D8DBE997B64B4883D36A6A /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = AAA1091AF78A4AA48B950298 /* CinderApp.icns */; };
+		1FFB9DC4576C42D6968E82BA /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 8745F41FA3BB47F3AD49ED44 /* Resources.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* Glove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8745F41FA3BB47F3AD49ED44 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		AAA1091AF78A4AA48B950298 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		141EAB1403C6492E8A640FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		77119124044149ADAFEC8B1A /* Glove_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Glove_Prefix.pch; sourceTree = "<group>"; name = Glove_Prefix.pch; };
+		AFCE225F036440E1BA97215A /* item.def */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../include/item.def; sourceTree = "<group>"; name = item.def; };
+		15C89B3BBDD543B498B53B10 /* GloveApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/GloveApp.cpp; sourceTree = "<group>"; name = GloveApp.cpp; };
+		B176697FF3D5487AAB9C7C99 /* AssetManager.cpp */ = {isa = PBXFileReference; path = "../../Cinder/blocks/Cinder-VNM/src/AssetManager.cpp"; sourceTree = "<group>"; explicitFileType = "\"\""; name = AssetManager.cpp; };
+		61D022E3D2B84286960383E7 /* MiniConfig.cpp */ = {isa = PBXFileReference; path = "../../Cinder/blocks/Cinder-VNM/src/MiniConfig.cpp"; sourceTree = "<group>"; explicitFileType = "\"\""; name = MiniConfig.cpp; };
+		9E3AF16B1C8B4F31A0358C1D /* AnsiToUtf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/AnsiToUtf.h"; sourceTree = "<group>"; name = AnsiToUtf.h; };
+		AEA20740FFF44DBA95ABA82F /* AssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/AssetManager.h"; sourceTree = "<group>"; name = AssetManager.h; };
+		4F77CC98A26245328FAB7CEE /* CaptureHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/CaptureHelper.h"; sourceTree = "<group>"; name = CaptureHelper.h; };
+		2F312F008E2E49218BC60C5F /* CinderGuizmo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/CinderGuizmo.h"; sourceTree = "<group>"; name = CinderGuizmo.h; };
+		7E06912A1470462885C3CAFB /* CinderRemoteImgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/CinderRemoteImgui.h"; sourceTree = "<group>"; name = CinderRemoteImgui.h; };
+		45F12AA41F8542D4985AC1FD /* CubemapRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/CubemapRenderer.h"; sourceTree = "<group>"; name = CubemapRenderer.h; };
+		E65F2FCB85EC4E7B9E1B0812 /* DearLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/DearLogger.h"; sourceTree = "<group>"; name = DearLogger.h; };
+		240365B92C194CAE9B52B0AD /* FontHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/FontHelper.h"; sourceTree = "<group>"; name = FontHelper.h; };
+		6BA7D8BBC46945B494D270FF /* GLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/GLHelper.h"; sourceTree = "<group>"; name = GLHelper.h; };
+		D2FD478269D64B3BA3E132C2 /* GlslParamsBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/GlslParamsBuilder.h"; sourceTree = "<group>"; name = GlslParamsBuilder.h; };
+		933F7D9473654C04BD9E91B8 /* GlslParamsBuilderImgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/GlslParamsBuilderImgui.h"; sourceTree = "<group>"; name = GlslParamsBuilderImgui.h; };
+		66D61844930A45A0BCC0465F /* LimitSingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/LimitSingleInstance.h"; sourceTree = "<group>"; name = LimitSingleInstance.h; };
+		D2F8881B0C7A4DE2AC3BA882 /* MiniConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/MiniConfig.h"; sourceTree = "<group>"; name = MiniConfig.h; };
+		AD0B33DBD14D4960B7603401 /* MiniConfigImgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/MiniConfigImgui.h"; sourceTree = "<group>"; name = MiniConfigImgui.h; };
+		804DAB0E335040509E15405C /* MotionHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/MotionHelper.h"; sourceTree = "<group>"; name = MotionHelper.h; };
+		3971423A5D4341CBB160E43D /* NvOptimusEnablement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/NvOptimusEnablement.h"; sourceTree = "<group>"; name = NvOptimusEnablement.h; };
+		FF346944C0FF4E44BB8E9BB0 /* OscHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/OscHelper.h"; sourceTree = "<group>"; name = OscHelper.h; };
+		F05F6A79AE83432EB8E09DDD /* renderdoc_app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/renderdoc_app.h"; sourceTree = "<group>"; name = renderdoc_app.h; };
+		7B823334D25A44299FF278EC /* SharedMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/SharedMemory.h"; sourceTree = "<group>"; name = SharedMemory.h; };
+		04F88076622F4F759726FE1D /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/StateMachine.h"; sourceTree = "<group>"; name = StateMachine.h; };
+		B467C7B7633A4E52A5CD3F29 /* TextureHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/TextureHelper.h"; sourceTree = "<group>"; name = TextureHelper.h; };
+		9FA112D124CC4D7D9F622274 /* TuioHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../Cinder/blocks/Cinder-VNM/include/TuioHelper.h"; sourceTree = "<group>"; name = TuioHelper.h; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				15C89B3BBDD543B498B53B10 /* GloveApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Glove.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Glove */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Glove;
+			sourceTree = "<group>";
+		};
+		AAC99B207C8D44AAA1675CC7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B176697FF3D5487AAB9C7C99 /* AssetManager.cpp */,
+				61D022E3D2B84286960383E7 /* MiniConfig.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4CA992B5FE484E088033D6EA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9E3AF16B1C8B4F31A0358C1D /* AnsiToUtf.h */,
+				AEA20740FFF44DBA95ABA82F /* AssetManager.h */,
+				4F77CC98A26245328FAB7CEE /* CaptureHelper.h */,
+				2F312F008E2E49218BC60C5F /* CinderGuizmo.h */,
+				7E06912A1470462885C3CAFB /* CinderRemoteImgui.h */,
+				45F12AA41F8542D4985AC1FD /* CubemapRenderer.h */,
+				E65F2FCB85EC4E7B9E1B0812 /* DearLogger.h */,
+				240365B92C194CAE9B52B0AD /* FontHelper.h */,
+				6BA7D8BBC46945B494D270FF /* GLHelper.h */,
+				D2FD478269D64B3BA3E132C2 /* GlslParamsBuilder.h */,
+				933F7D9473654C04BD9E91B8 /* GlslParamsBuilderImgui.h */,
+				66D61844930A45A0BCC0465F /* LimitSingleInstance.h */,
+				D2F8881B0C7A4DE2AC3BA882 /* MiniConfig.h */,
+				AD0B33DBD14D4960B7603401 /* MiniConfigImgui.h */,
+				804DAB0E335040509E15405C /* MotionHelper.h */,
+				3971423A5D4341CBB160E43D /* NvOptimusEnablement.h */,
+				FF346944C0FF4E44BB8E9BB0 /* OscHelper.h */,
+				F05F6A79AE83432EB8E09DDD /* renderdoc_app.h */,
+				7B823334D25A44299FF278EC /* SharedMemory.h */,
+				04F88076622F4F759726FE1D /* StateMachine.h */,
+				B467C7B7633A4E52A5CD3F29 /* TextureHelper.h */,
+				9FA112D124CC4D7D9F622274 /* TuioHelper.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		21FFB80663AB49DB9CB9DF5A /* vnm */ = {
+			isa = PBXGroup;
+			children = (
+				AAC99B207C8D44AAA1675CC7 /* src */,
+				4CA992B5FE484E088033D6EA /* include */,
+			);
+			name = vnm;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				21FFB80663AB49DB9CB9DF5A /* vnm */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8745F41FA3BB47F3AD49ED44 /* Resources.h */,
+				77119124044149ADAFEC8B1A /* Glove_Prefix.pch */,
+				AFCE225F036440E1BA97215A /* item.def */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAA1091AF78A4AA48B950298 /* CinderApp.icns */,
+				141EAB1403C6492E8A640FBB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Glove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Glove" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glove;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Glove;
+			productReference = 8D1107320486CEB800E47090 /* Glove.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Glove" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Glove */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Glove */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D8DBE997B64B4883D36A6A /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E1670E7C554237BF519512 /* GloveApp.cpp in Sources */,
+				F98B4746A95D4E4B904B5955 /* AssetManager.cpp in Sources */,
+				CA3686C823964F1F98A453F1 /* MiniConfig.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Glove_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Glove;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Glove_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Glove;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../Cinder";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					"\"../../Cinder/blocks/Cinder-VNM/include\"",
+					"\"../../Cinder/blocks/Cinder-VNM/ui\"",
+					"\"../../Cinder/blocks/Cinder-VNM/ui/implot\"",
+					../../Cinder/blocks,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../Cinder";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					"\"../../Cinder/blocks/Cinder-VNM/include\"",
+					"\"../../Cinder/blocks/Cinder-VNM/ui\"",
+					"\"../../Cinder/blocks/Cinder-VNM/ui/implot\"",
+					../../Cinder/blocks,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Glove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Glove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
